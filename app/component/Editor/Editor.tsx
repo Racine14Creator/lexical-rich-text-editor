@@ -1,3 +1,5 @@
+"use client";
+
 import {$getRoot, $getSelection} from 'lexical';
 import {useEffect} from 'react';
 
