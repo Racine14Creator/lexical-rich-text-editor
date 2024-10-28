@@ -32,7 +32,7 @@ export default function Editor() {
   return (
     <LexicalComposer initialConfig={initialConfig}>
       <RichTextPlugin
-        contentEditable={<ContentEditable />}
+        contentEditable={<ContentEditable className="focus:outline-none" />}
         placeholder={<div>Enter some text...</div>}
         ErrorBoundary={LexicalErrorBoundary}
       />
