@@ -9,11 +9,8 @@ import {RichTextPlugin} from '@lexical/react/LexicalRichTextPlugin';
 import {ContentEditable} from '@lexical/react/LexicalContentEditable';
 import {HistoryPlugin} from '@lexical/react/LexicalHistoryPlugin';
 import {LexicalErrorBoundary} from '@lexical/react/LexicalErrorBoundary';
-
-const theme = {
-  // Theme styling goes here
-  //...
-}
+import { themeExample } from './Theme';
+import Toolbars from './Toolbar';
 
 // Catch any errors that occur during Lexical updates and log them
 // or throw them as needed. If you don't throw them, Lexical will
@@ -25,12 +22,13 @@ function onError(error: any) {
 export default function Editor() {
   const initialConfig = {
     namespace: 'Lexical Editor',
-    theme,
+    theme: themeExample,
     onError,
   };
 
   return (
     <LexicalComposer initialConfig={initialConfig}>
+      <Toolbars />
       <RichTextPlugin
         contentEditable={<ContentEditable className="focus:outline-none" />}
         placeholder={<div>Enter some text...</div>}
