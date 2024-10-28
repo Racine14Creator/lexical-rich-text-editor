@@ -25,9 +25,9 @@ export const themeExample = {
     image: 'editor-image',
     link: 'editor-link',
     text: {
-      bold: 'editor-textBold',
+      bold: 'font-bold',
       code: 'editor-textCode',
-      italic: 'editor-textItalic',
+      italic: 'font-italic',
       strikethrough: 'editor-textStrikethrough',
       subscript: 'editor-textSubscript',
       superscript: 'editor-textSuperscript',
