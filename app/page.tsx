@@ -1,6 +1,9 @@
+import Editor from "./component/Editor/Editor";
 
 export default function Home() {
   return (
-    <h3>Hello World</h3>
+    <>
+      <Editor />
+    </>
   );
 }
